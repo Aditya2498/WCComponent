@@ -25,21 +25,6 @@
       "field_placeholder": "Enter contact no.",
       "field_regex": "/^([0|+[0-9]{1,5})?([7-9][0-9]{9})$/",
       "field_type": "text"
-    },
-    {
-      "field_id": "employment",
-      "field_label": "Employment desired",
-      "field_value": "Part-Time",
-      "field_mandatory": "yes",
-      "field_options": [
-        {
-          "option_label": "Full-Time"
-        },
-        {
-          "option_label": "Part-Time"
-        }
-      ],
-      "field_type": "select"
     }
   ]
 }
