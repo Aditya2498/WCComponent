@@ -17,7 +17,7 @@ const Input = ({ field_id, field_placeholder, field_label, field_value,field_reg
     }
   }
   return (
-    <>
+    <div className="input-block">
       <label htmlFor={field_id}>{field_label}</label>
       <input
         type="text"
@@ -26,7 +26,7 @@ const Input = ({ field_id, field_placeholder, field_label, field_value,field_reg
         id={field_id}
         onChange={(e)=>eventChange(field_id,e)}
       />
-    </>
+    </div>
   );
 };
 

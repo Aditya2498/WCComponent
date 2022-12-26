@@ -9,7 +9,7 @@ const Checkbox = ({
 }) => {
   const { handleChange } = useContext(FormContext);
   return (
-    <>
+    <div className="input-block">
       <label htmlFor={field_id}>{field_label}</label>
       <input
         type="checkbox"
@@ -18,7 +18,7 @@ const Checkbox = ({
         id={field_id}
         onChange={(e)=>handleChange(field_id,e)}
       />
-    </>
+    </div>
   );
 };
 

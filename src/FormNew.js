@@ -10,6 +10,7 @@ const FormNew = () => {
 
   const [element, setElement] = useState(null);
   const [error, setError] = useState(false);
+  
 
   useEffect(() => {
     const ajv = new Ajv();
@@ -51,22 +52,18 @@ const FormNew = () => {
     console.log("handle change", event.target.value);
   };
   return (
-    <div className="container">
-     <h2>
-     {page_label}
-    </h2>
+    <div className="wc-form">
+     <h2 className="title">{page_label}</h2>
     {
-      error ? <h2>Kindly Correct Schema Errors!</h2>:
+      error ? <div class="error">Kindly Correct Schema Errors!</div>:
       <FormContext.Provider value={{ handleChange }}>
           <form>
-            <div className="form">
-              {fields
-                ? fields.map((field, index) => (
-                    <Element key={index} field={field} />
-                  ))
-                : null}
-              <button type="submit" onClick={(e)=>handleSubmit(e)}>Submit</button>
-            </div>
+            {fields
+              ? fields.map((field, index) => (
+                  <Element key={index} field={field} />
+                ))
+            : null}
+            <button type="submit" onClick={(e)=>handleSubmit(e)}>Submit</button>
           </form>
         </FormContext.Provider>
     }

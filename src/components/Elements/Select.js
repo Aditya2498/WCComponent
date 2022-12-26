@@ -10,7 +10,7 @@ const Select = ({
 }) => {
   const {handleChange} = useContext(FormContext)
   return (
-    <>
+    <div className="input-block">
     <label htmlFor={field_id}>{field_label}</label>
       <select
       id={field_id}
@@ -25,7 +25,7 @@ const Select = ({
           ))}
         <option></option>
       </select>
-    </>
+    </div>
   );
 };
 
