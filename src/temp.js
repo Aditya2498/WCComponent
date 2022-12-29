@@ -2,7 +2,7 @@ import React from 'react'
 
 const Temp = () => {
   return (
-    <div>DDFDFFDDFF</div>
+    <div>Temp WEB Component.</div>
   )
 }
 

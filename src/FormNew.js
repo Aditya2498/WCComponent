@@ -49,7 +49,6 @@ const FormNew = () => {
         }
       }
     });
-    console.log("handle change", event.target.value);
   };
   return (
     <div className="wc-form">
